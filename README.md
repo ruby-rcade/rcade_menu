@@ -1,6 +1,6 @@
-# RcadeMenu
+# Rcade::Menu
 
-TODO: Write a gem description
+A set of components for building Gosu menu screens.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+See [examples directory](https://github.com/ruby-rcade/rcade_menu/tree/master/examples) for usage.
 
 ## Contributing
 
