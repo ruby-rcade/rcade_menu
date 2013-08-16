@@ -69,17 +69,18 @@ module Rcade
           when :left   then 0
           when :center then window.width / 2 - width
           when :right  then window.width - width
-          else @x < 0 ? @x + window.width : @x
+          else @x < 0 ? @x + window.width - width : @x
         end
       end
 
       def offset_top(window)
         @offset_top ||= case @y
-          when :top    then offset_top = 0
-          when :center then offset_top = window.height / 2 - height
-          when :bottom then offset_top = window.height - height
-          else @y < 0 ? @y + window.height : @y
+          when :top    then 0
+          when :center then window.height / 2 - height
+          when :bottom then window.height - height
+          else @y < 0 ? @y + window.height - height : @y
         end
+        @offset_top
       end
 
       def render(window)
